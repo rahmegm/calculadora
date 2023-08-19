@@ -44,4 +44,23 @@ def calc():
     if resp not in [1, 2, 3, 4]:
         print("Opção não encontrada!")
         resp = int(input("Escolha a operação a ser usada (1 a 4): "))
-    
+    resp2 = "s"
+    nums = list()
+    while resp2[0] == "s":
+        num = float(input("Digite um número: "))
+        nums.append(num)
+        resp2 = input("Deseja continuar [s/n]? ").strip().lower()
+        if resp2[0] not in ["s", "n"]:
+            print("Resposta incorreta!")
+            resp2 = input("Deseja continuar [s/n]? ").strip().lower()  
+    if resp == 1:
+        return soma(*nums)
+    elif resp == 2:
+        return sub(*nums)
+    elif resp == 3:
+        return mult(*nums)
+    else:
+        return div(*nums)
+
+
+calc()
