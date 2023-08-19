@@ -15,6 +15,10 @@ def sub(*args):
 
 
 def mult(*args):
+    resultado = 1
+    for num in args:
+        resultado *= num
+    return print(resultado)
 
 
 def div(*args):
