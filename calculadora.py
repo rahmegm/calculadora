@@ -6,6 +6,12 @@ def soma(*args):
 
 
 def sub(*args):
+    for cont in range(len(args)):
+        if cont == 0:
+            resultado = args[cont]
+        else:
+            resultado -= args[cont]
+    return print(resultado)
 
 
 def mult(*args):
