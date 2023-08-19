@@ -1,4 +1,8 @@
 def soma(*args):
+    resultado = 0
+    for num in args:
+        resultado += num
+    return print(resultado)
 
 
 def sub(*args):
@@ -21,4 +25,4 @@ def calc():
     if resp not in [1, 2, 3, 4]:
         print("Opção não encontrada!")
         resp = int(input("Escolha a operação a ser usada (1 a 4): "))
-
+    
