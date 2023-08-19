@@ -22,6 +22,15 @@ def mult(*args):
 
 
 def div(*args):
+    for cont in range(len(args)):
+        if cont == 0:
+            resultado = args[cont]
+        elif args[cont] != 0:
+            resultado /= args[cont]
+        else:
+            resultado = "Não é possível dividir por 0!"
+            break
+    return print(resultado)      
 
 
 def calc():
